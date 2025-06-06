@@ -5,15 +5,9 @@
   <title>PROJECT FORGET ME</title>
   <style>
     body {
-  font-family: 'Courier New', Courier, monospace;
-  background-color: #ffffff;  /* Plain white background */
-  color: #111111;
-  margin: 40px;
-}
-    body {
       font-family: 'Courier New', Courier, monospace;
-      background-color: #f4f4f4;
-      color: #222;
+      background-color: #ffffff;  /* Plain white background */
+      color: #111111;
       margin: 40px;
     }
     header {
@@ -29,24 +23,39 @@
       line-height: 1.4em;
       max-width: 600px;
     }
+    nav ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 20px;
+    }
+    nav ul li {
+      margin-bottom: 10px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #111;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>PROJECT FORGET ME</h1>
   </header>
+
   <p>Welcome to the confidential experiment files. Access restricted.</p>
-  <ul>
-  <li><a href="A-01.html">Test Subject A-01: Jax Rodriguez</a></li>
-  <li><a href="A-02.html">Test Subject A-02: Lilth</a></li>
-  <li><a href="A-03.html">Test Subject A-03: Naomi</a></li>
-    <nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="overview.html">Experiment Overview</a></li>
-    <li><a href="A-03.html">Subject A-03 Profile</a></li>
-  </ul>
-</nav>
-</ul>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="overview.html">Experiment Overview</a></li>
+      <li><a href="A-01.html">Test Subject A-01: Jax Rodriguez</a></li>
+      <li><a href="A-02.html">Test Subject A-02: Lilth</a></li>
+      <li><a href="A-03.html">Test Subject A-03: Naomi</a></li>
+    </ul>
+  </nav>
 </body>
 </html>
