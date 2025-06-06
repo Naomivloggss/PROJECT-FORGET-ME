@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Experiment Overview — PROJECT FORGET ME</title>
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      background-color: #fff;
+      color: #111;
+      margin: 40px;
+      max-width: 800px;
+      line-height: 1.6;
+    }
+    h1 {
+      letter-spacing: 3px;
+      color: #800;
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: #b33;
+      margin-top: 30px;
+    }
+    p {
+      margin-bottom: 15px;
+    }
+    nav a {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 8px 15px;
+      background: #800;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      letter-spacing: 1.5px;
+      font-family: 'Courier New', monospace;
+    }
+    nav a:hover {
+      background: #b33;
+    }
+  </style>
+</head>
+<body>
+  <h1>Experiment Overview</h1>
+
+  <section>
+    <h2>Project Summary</h2>
+    <p>
+      PROJECT FORGET ME is a classified psychological experiment focused on memory manipulation and control of human subjects. Subjects are monitored continuously in a controlled environment, and their cognitive responses to various stimuli are recorded for analysis.
+    </p>
+  </section>
+
+  <section>
+    <h2>Objectives</h2>
+    <ul>
+      <li>Investigate methods to induce selective amnesia.</li>
+      <li>Explore behavioral conditioning through memory loops.</li>
+      <li>Assess emotional responses under controlled stress.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Methodology</h2>
+    <p>
+      Subjects are isolated in simulated environments with intermittent exposure to memory triggers. Data is collected through digital diaries, biometric sensors, and observational logs.
+    </p>
+  </section>
+
+  <section>
+    <h2>Safety Protocols</h2>
+    <p>
+      All procedures comply with internal ethical standards. Sedation and monitoring protocols are strictly enforced to prevent harm.
+    </p>
+  </section>
+
+  <nav>
+    <a href="dashboard.html">← Back to Dashboard</a>
+  </nav>
+</body>
+</html>
