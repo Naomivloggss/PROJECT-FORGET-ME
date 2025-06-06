@@ -21,6 +21,7 @@
       flex-wrap: wrap;
       gap: 20px;
       justify-content: center;
+      margin-bottom: 40px;
     }
     .link-card {
       background: #222;
@@ -45,6 +46,23 @@
       font-size: 1.1em;
       display: block;
     }
+    button.back-button {
+      background: #800;
+      color: #eee;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: 'Courier New', monospace;
+      font-weight: bold;
+      letter-spacing: 2px;
+      display: block;
+      margin: 0 auto;
+      width: max-content;
+    }
+    button.back-button:hover {
+      background: #b00;
+    }
   </style>
 </head>
 <body>
@@ -52,7 +70,7 @@
 
   <div class="links">
     <div class="link-card">
-      <a href="experiment-overview.html">Experiment Overview</a>
+      <a href="experiment-overview.html">In Depth Overview</a>
     </div>
     <div class="link-card">
       <a href="research-team.html">Research Team</a>
@@ -66,22 +84,9 @@
     <div class="link-card">
       <a href="secure-notes.html">Secure Notes</a>
     </div>
-
   </div>
+
+  <button class="back-button" onclick="history.back()">← Back</button>
 </body>
 </html>
-<button onclick="history.back()" style="
-  background: #800;
-  color: #eee;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: 'Courier New', monospace;
-  font-weight: bold;
-  letter-spacing: 2px;
-  margin-bottom: 30px;
-">
-  ← Back
-</button>
 
