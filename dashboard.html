@@ -2,103 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Dashboard — PROJECT FORGET ME</title>
+  <title>PROJECT FORGET ME — Dashboard</title>
   <style>
     body {
-      font-family: 'Courier New', Courier, monospace;
-      background-color: #fff;
-      color: #111;
+      font-family: 'Courier New', monospace;
+      background-color: #111;
+      color: #eee;
       margin: 40px;
     }
-    .confidential-banner {
-      background-color: #300;
-      color: #fff;
+    h1 {
+      color: #f44;
+      letter-spacing: 4px;
+      margin-bottom: 40px;
       text-align: center;
-      padding: 10px;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .link-card {
+      background: #222;
+      border: 2px solid #800;
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+      border-radius: 6px;
+      box-shadow: 0 0 15px #800;
+      transition: background 0.3s, border-color 0.3s;
+    }
+    .link-card:hover {
+      background: #400;
+      border-color: #f44;
+      cursor: pointer;
+    }
+    .link-card a {
+      color: #eee;
+      text-decoration: none;
       font-weight: bold;
       letter-spacing: 2px;
-      border-bottom: 3px solid #800;
-    }
-    header {
-      border-bottom: 2px solid #ccc;
-      margin-bottom: 20px;
-    }
-    h1 {
-      font-size: 2.5em;
-      letter-spacing: 3px;
-    }
-    nav ul {
-      list-style-type: none;
-      padding-left: 0;
-      margin-top: 20px;
-    }
-    nav ul li {
-      display: inline;
-      margin-right: 20px;
-    }
-    nav ul li a {
-      text-decoration: none;
-      color: #111;
-      font-weight: bold;
-    }
-    nav ul li a:hover {
-      text-decoration: underline;
-    }
-    section {
-      margin-top: 30px;
-      max-width: 700px;
-    }
-    h2 {
-      color: #800;
-      margin-bottom: 10px;
-      letter-spacing: 1.5px;
-    }
-    p {
       font-size: 1.1em;
-      line-height: 1.4em;
+      display: block;
     }
   </style>
 </head>
 <body>
+  <h1>PROJECT FORGET ME — DASHBOARD</h1>
 
-  <div class="confidential-banner">
-    PROJECT FORGET ME — CLASSIFIED EXPERIMENT — DO NOT DISTRIBUTE
+  <div class="links">
+    <div class="link-card">
+      <a href="experiment-overview.html">Experiment Overview</a>
+    </div>
+    <div class="link-card">
+      <a href="research-team.html">Research Team</a>
+    </div>
+    <div class="link-card">
+      <a href="subject-logs.html">Subject Logs</a>
+    </div>
+    <div class="link-card">
+      <a href="data-analysis.html">Data Analysis</a>
+    </div>
+    <div class="link-card">
+      <a href="secure-notes.html">Secure Notes</a>
+    </div>
+    <!-- Add more links as needed -->
   </div>
-
-  <header>
-    <h1>PROJECT FORGET ME Dashboard</h1>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="overview.html">Experiment Overview</a></li>
-      <li><a href="A-01.html">Subject A-01</a></li>
-      <li><a href="A-02.html">Subject A-02</a></li>
-      <li><a href="A-03.html">Subject A-03</a></li>
-      <li><a href="logs.html">Experiment Logs</a></li>
-      <li><a href="login.html">Logout</a></li>
-    </ul>
-  </nav>
-
-  <section>
-    <h2>Welcome, Researcher</h2>
-    <p>This dashboard contains the most sensitive and classified information about the ongoing Project Forget Me. Only authorized personnel may access these files.</p>
-  </section>
-
-  <section>
-    <h2>Key Project Information</h2>
-    <p>The Project Forget Me experiment focuses on memory manipulation and behavioral control of select test subjects. The goal is to study the effects of induced memory loss and psychological conditioning in a controlled environment.</p>
-  </section>
-
-  <section>
-    <h2>Research Team</h2>
-    <p><strong>Lead Scientist:</strong> Dr. Michael Harlan<br />
-       <strong>Data Analyst:</strong> Dr. Sara Voss<br />
-       <strong>Behavioral Specialist:</strong> Dr. Kevin Zhou<br />
-       <strong>Technical Support:</strong> Lydia Park</p>
-  </section>
-
 </body>
 </html>
-
