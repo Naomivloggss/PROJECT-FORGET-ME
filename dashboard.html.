@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard — PROJECT FORGET ME</title>
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #fff;
+      color: #111;
+      margin: 40px;
+    }
+    .confidential-banner {
+      background-color: #300;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      border-bottom: 3px solid #800;
+    }
+    header {
+      border-bottom: 2px solid #ccc;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 2.5em;
+      letter-spacing: 3px;
+    }
+    nav ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 20px;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #111;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    section {
+      margin-top: 30px;
+      max-width: 700px;
+    }
+    h2 {
+      color: #800;
+      margin-bottom: 10px;
+      letter-spacing: 1.5px;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.4em;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="confidential-banner">
+    PROJECT FORGET ME — CLASSIFIED EXPERIMENT — DO NOT DISTRIBUTE
+  </div>
+
+  <header>
+    <h1>PROJECT FORGET ME Dashboard</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="overview.html">Experiment Overview</a></li>
+      <li><a href="A-01.html">Subject A-01</a></li>
+      <li><a href="A-02.html">Subject A-02</a></li>
+      <li><a href="A-03.html">Subject A-03</a></li>
+      <li><a href="logs.html">Experiment Logs</a></li>
+      <li><a href="login.html">Logout</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2>Welcome, Researcher</h2>
+    <p>This dashboard contains the most sensitive and classified information about the ongoing Project Forget Me. Only authorized personnel may access these files.</p>
+  </section>
+
+  <section>
+    <h2>Key Project Information</h2>
+    <p>The Project Forget Me experiment focuses on memory manipulation and behavioral control of select test subjects. The goal is to study the effects of induced memory loss and psychological conditioning in a controlled environment.</p>
+  </section>
+
+  <section>
+    <h2>Research Team</h2>
+    <p><strong>Lead Scientist:</strong> Dr. Michael Harlan<br />
+       <strong>Data Analyst:</strong> Dr. Sara Voss<br />
+       <strong>Behavioral Specialist:</strong> Dr. Kevin Zhou<br />
+       <strong>Technical Support:</strong> Lydia Park</p>
+  </section>
+
+</body>
+</html>
+
