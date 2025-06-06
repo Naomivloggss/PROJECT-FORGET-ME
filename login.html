@@ -64,7 +64,6 @@
     .message {
       margin-top: 20px;
       font-style: italic;
-      color: #f88;
       min-height: 20px;
     }
   </style>
@@ -90,13 +89,17 @@
 
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      const user = form.username.value.trim();
+      const user = form.username.value.trim().toLowerCase();
       const pass = form.password.value.trim();
 
-      // Fake check - always deny access
-      if(user.toLowerCase() === "admin" && pass === "projectforgetme") {
+      if(user === "admin" && pass === "projectforgetme") {
         message.style.color = "#8f8";
         message.textContent = "ACCESS GRANTED. WELCOME.";
+
+        // Redirect after a short delay to show message
+        setTimeout(() => {
+          window.location.href = "dashboard.html";
+        }, 1000);
       } else {
         message.style.color = "#f88";
         message.textContent = "ACCESS DENIED. INVALID CREDENTIALS.";
@@ -106,3 +109,4 @@
   </script>
 </body>
 </html>
+
