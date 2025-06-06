@@ -2,138 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>PROJECT FORGET ME — Secure Login</title>
+  <title>PROJECT FORGET ME — About</title>
   <style>
     body {
-      background-color: #111;
-      color: #eee;
       font-family: 'Courier New', Courier, monospace;
-      display: flex;
-      height: 100vh;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-      position: relative;
+      background-color: #fff;
+      color: #111;
+      margin: 40px;
+      max-width: 700px;
     }
-
-    .back-button {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      background: #800;
-      color: #eee;
-      border: none;
-      padding: 6px 12px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-family: 'Courier New', monospace;
-      font-size: 14px;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
-
-    .back-button:hover {
-      background: #b00;
-    }
-
-    .login-container {
-      background: #222;
-      border: 2px solid #800;
-      padding: 40px;
-      width: 320px;
-      box-shadow: 0 0 20px #800;
-      text-align: center;
-      border-radius: 6px;
-    }
-
     h1 {
       letter-spacing: 4px;
-      margin-bottom: 30px;
-      color: #f44;
+      color: #800000;
+      margin-bottom: 20px;
     }
-
-    label {
-      display: block;
-      margin: 15px 0 5px;
-      font-size: 14px;
-      text-align: left;
+    p {
+      font-size: 1.1em;
+      line-height: 1.5em;
+      margin-bottom: 1em;
     }
-
-    input[type="text"], input[type="password"] {
-      width: 100%;
-      padding: 8px;
-      font-family: 'Courier New', monospace;
-      font-size: 16px;
-      border: 1px solid #555;
-      border-radius: 3px;
-      background: #111;
-      color: #eee;
-      box-sizing: border-box;
-    }
-
-    button[type="submit"] {
-      margin-top: 25px;
-      width: 100%;
-      padding: 10px;
-      background: #800;
-      border: none;
-      color: #eee;
-      font-weight: bold;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 3px;
-      letter-spacing: 2px;
-    }
-
-    button[type="submit"]:hover {
-      background: #b00;
-    }
-
-    .message {
-      margin-top: 20px;
+    .credentials {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #444;
       font-style: italic;
-      min-height: 20px;
+      user-select: text;
     }
   </style>
 </head>
 <body>
-  <button class="back-button" onclick="history.back()">← Back</button>
+  <h1>About Project Forget Me</h1>
+  <p>
+    Project Forget Me is a classified psychological and neurological experiment 
+    aimed at exploring the depths of memory manipulation and human perception. 
+    The project remains confidential, with only select personnel authorized to access 
+    detailed data and logs.
+  </p>
+  <p>
+    This project utilizes advanced methods to induce partial memory loss and 
+    emotional isolation in test subjects under controlled conditions.
+  </p>
+  <p>
+    For security reasons, access to sensitive data is restricted via a secure login portal. 
+    Only approved personnel with valid credentials are permitted entry.
+  </p>
 
-  <div class="login-container">
-    <h1>SECURE LOGIN</h1>
-    <form id="loginForm">
-      <label for="username">USERNAME</label>
-      <input type="text" id="username" name="username" autocomplete="off" required />
-      
-      <label for="password">PASSWORD</label>
-      <input type="password" id="password" name="password" autocomplete="off" required />
-      
-      <button type="submit">ENTER</button>
-    </form>
-    <div class="message" id="message"></div>
-  </div>
-
-  <script>
-    const form = document.getElementById('loginForm');
-    const message = document.getElementById('message');
-
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const user = form.username.value.trim().toLowerCase();
-      const pass = form.password.value.trim();
-
-      if(user === "admin" && pass === "projectforgetme") {
-        message.style.color = "#8f8";
-        message.textContent = "ACCESS GRANTED. WELCOME.";
-        setTimeout(() => {
-          window.location.href = "dashboard.html";
-        }, 1000);
-      } else {
-        message.style.color = "#f88";
-        message.textContent = "ACCESS DENIED. INVALID CREDENTIALS.";
-      }
-      form.password.value = '';
-    });
-  </script>
+  <p class="credentials">
+    Username: admin<br/>
+    Password: projectforgetme
+  </p>
 </body>
 </html>
