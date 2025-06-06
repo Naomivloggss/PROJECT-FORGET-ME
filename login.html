@@ -13,7 +13,29 @@
       justify-content: center;
       align-items: center;
       margin: 0;
+      position: relative;
     }
+
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: #800;
+      color: #eee;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: 'Courier New', monospace;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .back-button:hover {
+      background: #b00;
+    }
+
     .login-container {
       background: #222;
       border: 2px solid #800;
@@ -23,17 +45,20 @@
       text-align: center;
       border-radius: 6px;
     }
+
     h1 {
       letter-spacing: 4px;
       margin-bottom: 30px;
       color: #f44;
     }
+
     label {
       display: block;
       margin: 15px 0 5px;
       font-size: 14px;
       text-align: left;
     }
+
     input[type="text"], input[type="password"] {
       width: 100%;
       padding: 8px;
@@ -45,7 +70,8 @@
       color: #eee;
       box-sizing: border-box;
     }
-    button {
+
+    button[type="submit"] {
       margin-top: 25px;
       width: 100%;
       padding: 10px;
@@ -58,9 +84,11 @@
       border-radius: 3px;
       letter-spacing: 2px;
     }
-    button:hover {
+
+    button[type="submit"]:hover {
       background: #b00;
     }
+
     .message {
       margin-top: 20px;
       font-style: italic;
@@ -69,6 +97,8 @@
   </style>
 </head>
 <body>
+  <button class="back-button" onclick="history.back()">← Back</button>
+
   <div class="login-container">
     <h1>SECURE LOGIN</h1>
     <form id="loginForm">
@@ -95,8 +125,6 @@
       if(user === "admin" && pass === "projectforgetme") {
         message.style.color = "#8f8";
         message.textContent = "ACCESS GRANTED. WELCOME.";
-
-        // Redirect after a short delay to show message
         setTimeout(() => {
           window.location.href = "dashboard.html";
         }, 1000);
@@ -109,18 +137,3 @@
   </script>
 </body>
 </html>
-<button onclick="history.back()" style="
-  background: #800;
-  color: #eee;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: 'Courier New', monospace;
-  font-weight: bold;
-  letter-spacing: 2px;
-  margin-bottom: 30px;
-">
-  ← Back
-</button>
-
