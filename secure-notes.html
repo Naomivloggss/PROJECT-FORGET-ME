@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PROJECT FORGET ME — Secure Notes</title>
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      background-color: #111;
+      color: #eee;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #f44;
+      letter-spacing: 3px;
+      margin-bottom: 40px;
+    }
+
+    .note {
+      background: #1a1a1a;
+      border: 2px solid #800;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      box-shadow: 0 0 10px #800;
+      white-space: pre-wrap;
+    }
+
+    .note-title {
+      color: #f88;
+      font-size: 1.1em;
+      margin-bottom: 10px;
+    }
+
+    .glitch {
+      color: #f44;
+    }
+
+    .hidden {
+      background: #222;
+      color: #222;
+      border-radius: 2px;
+      padding: 0 3px;
+    }
+
+    .back-button {
+      display: block;
+      margin: 40px auto 0;
+      background: #800;
+      color: #eee;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-family: 'Courier New', monospace;
+      font-weight: bold;
+      letter-spacing: 2px;
+      cursor: pointer;
+    }
+
+    .back-button:hover {
+      background: #b00;
+    }
+  </style>
+</head>
+<body>
+  <h1>SECURE NOTES</h1>
+
+  <div class="note">
+    <div class="note-title">Dr. Everson — [PRIVATE THOUGHT LOG]</div>
+    I see her sometimes. Staring at corners.  
+    She's not supposed to remember. But her drawings… they match the original lab.  
+    Janet isn't in the system — why is Naomi asking about her again?
+  </div>
+
+  <div class="note">
+    <div class="note-title">AUTOSAVE — FILE UNKNOWN</div>
+    Subject A-03 recorded vocal sample at 02:12 AM:  
+    “Why did Daddy leave me in the pink room again?”  
+    <span class="glitch">This file should have been erased.</span>
+  </div>
+
+  <div class="note">
+    <div class="note-title">Security Team Lead</div>
+    Door 3A opened on its own. No log, no footage.  
+    Naomi’s door code wasn’t activated, but she was inside.  
+    We need a hard lockdown. Someone’s manipulating the timeline again.
+  </div>
+
+  <div class="note">
+    <div class="note-title">Deleted Draft — Not Sent</div>
+    I miss her voice before it got so quiet.  
+    Sometimes I hear her whisper in the vents.  
+    Maybe she never forgot. Maybe she’s just pretending to play along.  
+    <span class="hidden">I deserve what’s coming.</span>
+  </div>
+
+  <div class="note">
+    <div class="note-title">System Admin Log — Unclassified</div>
+    WARNING: Subject A-03's dream logs syncing with offline files.  
+    Experiment runtime exceeds 365 days. She still believes it’s Month 5.  
+    No human can endure this. Not even her.
+  </div>
+
+  <button class="back-button" onclick="history.back()">← Back</button>
+</body>
+</html>
